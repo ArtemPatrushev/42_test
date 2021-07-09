@@ -1,0 +1,42 @@
+.pagination {
+    margin-top: 22px;
+    margin-bottom: 169px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 963.55px;
+    height: 56px;
+    background-color: #FAFAFB;
+    align-self: center;
+    @media (max-width: 990px) {
+        width: auto;
+        padding: 0 20px 0 20px;
+    }
+    & > div {
+        margin-right: 10px;
+    }
+    .pageNumber {
+        width: 62px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 27px;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .selectedPage {
+        background: #221874;
+        color: #FFFFFF;
+    }
+    .paginatorButton {
+        width: 50px;
+        margin-top: 0;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        background-color: none;
+        margin-right: 10px;
+        border-bottom: 1px solid #000;
+    }
+}

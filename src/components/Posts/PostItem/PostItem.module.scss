@@ -1,0 +1,88 @@
+.postItem {
+    display: flex;
+    width: 840px;
+    height: auto;
+    border-bottom: 2px solid #F6F7F8;
+    margin-bottom: 33.5px;
+    @media (max-width: 1020px) {
+        width: auto;
+    }
+    .postItem__content {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        .postItem__content__top {
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            width: 100%;
+            border-bottom: 2px solid #F6F7F8;
+            padding: 22px 0 22px 0;
+            @media (max-width: 950px) {
+                flex-direction: column;
+            }
+            .postItem__content__top__header {
+                margin-right: 10px;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                text-transform: capitalize;
+                color: #22262A;
+                width: auto;
+            }
+            .postItem__content__top__author {
+                font-size: 16px;
+                line-height: 24px;
+                color: #979797;
+                align-self: flex-end;
+                display: flex;
+                width: 350px;
+                @media (max-width: 950px) {
+                    align-self: flex-start;
+                    margin-top: 15px;
+                }
+                @media (max-width: 415px) {
+                    flex-direction: column;
+                    width: auto;
+                }
+                & > span {
+                    display: block;
+                    color: #33A0FF;
+                }
+                & p {
+                    width: 75px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .postItem__content__text {
+            padding: 22px 0 22px 0;
+            font-size: 16px;
+            line-height: 24px;
+            color: #262626;
+            width: auto;
+            text-align: justify;
+            padding-right: 15px;
+        }
+        .postItem__content__appraisal {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 15px;
+            .postItem__content__appraisal__item {
+                display: flex;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 40px;
+                // color: #33A0FF; - цвет при лайке
+                color: #979797;
+                & > img {
+                    margin-right: 4px;
+                }
+                &:not(:last-child) {
+                    margin-right: 21px;
+                }
+            }
+        }
+    }
+}
